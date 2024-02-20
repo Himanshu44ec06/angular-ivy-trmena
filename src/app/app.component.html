@@ -1,0 +1,20 @@
+<div class="pdf-container">
+  <header class="action-bar">
+    <span id="pdf-url">
+      PDF URL :
+      <input type="text" [(ngModel)]="url" (change)="initPdf()" /> </span
+    >&nbsp;&nbsp;
+    <span>
+      <input
+        type="file"
+        (change)="pdfOnload($event)"
+        id="pdf-upload"
+        accept=".pdf"
+        multiple="false"
+    /></span>
+
+    &nbsp; &nbsp;
+  </header>
+
+  <section id="canvas-container"></section>
+</div>

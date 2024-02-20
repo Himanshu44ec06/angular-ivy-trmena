@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+#canvas-container {
+  background: gray;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.page_container {
+  position: relative;
+  margin: 10px auto;
+}
+
+.canvas-container {
+  margin: 0 auto;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.text_container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.text_container > span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+canvas {
+  margin: 0 auto;
+}
+
+mark {
+  color: transparent;
+  background: rgb(12, 125, 255);
+}
+
+mark.active {
+  background: rgb(221, 52, 1);
+}
+
+.action-bar {
+  position: fixed;
+  z-index: 2;
+  background: rgb(223, 223, 223);
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+  padding: 14px 10px 0;
+}
+
+#pdf-url input {
+  width: 300px;
+  font-size: 12px;
+}
+
+.pdf-container {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+.new-pdf {
+  width: 50%;
+  float: right;
+  height: 100%;
+}
